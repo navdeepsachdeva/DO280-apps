@@ -12,7 +12,7 @@ RUN touch /run/nginx.pid \
   && chgrp -R 0 /var/log/nginx /run/nginx.pid \
   && chmod -R g+rwx /var/log/nginx /run/nginx.pid
 
-EXPOSE 8080
+#EXPOSE 8080
 USER 1001
 
 CMD nginx -g "daemon off;"
