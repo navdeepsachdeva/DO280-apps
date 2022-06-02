@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nginx-118
+FROM registry.access.redhat.com/ubi8:0
 
 user root
 RUN yum install -y --disableplugin=subscription-manager --nodocs nginx && yum clean all
